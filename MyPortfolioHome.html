@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./MyPortfolioHome.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="MyPortfolioHome.html">Home</a></li>
+                <li><a href="MyPortfolioAbout.html">About</a></li>
+                <li><a href="MyProtfolioServices.html">Services</a></li>
+                <li><a href="MyPortfolioPortfolio.html">Portfolio</a></li>
+                <li><a href="MyPortfolioContact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+    <main class="mainBody">
+        <div class="myText">
+            <div class="myText2">
+                <p class="paragraph">Hello,it's Me</p>
+                <p>Shobhit Srivastava</p>
+                <p>And I'm a <span></span></p>
+            </div>
+            <p class="someText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas delectus temporibus,
+                accusamus iste dolor, nobis.</p>
+            <div class="social-media">
+                <div><i class="fa-brands fa-facebook"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-linkedin"></i></div>
+            </div>
+            <button>Download</button>
+        </div>
+        <div class="myImage">
+            <div class="image">
+                <img src="./IMG_20230929_081831.jpg" alt="Image is not found">
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    let span = document.querySelector('span');
+    let array = ["Sfotware Developer", "Backend Developer", "Frontend Developer"];
+    let index = 0;
+    let c_count = 0;
+    typewriter();
+    function typewriter() {
+        c_count++;
+        span.innerHTML = array[index].slice(0, c_count);
+        if (c_count == array[index].length) {
+            index++;
+            c_count = 0;
+        }
+        if (index > array.length - 1) {
+            index = 0;
+        }
+        setTimeout('typewriter()', 300);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburgerMenu.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+        });
+    });
+
+</script>
+
+</html>

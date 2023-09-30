@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #1f242d;
+  font-size: 62.5%;
+}
+
+.navbar {
+  background-color: #1f242d;
+  color: #fff;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 50px;
+  font-size: 1.25rem;
+  padding-top: 0.8rem;
+  font-weight: bold;
+  margin-left: 0rem;
+  color: #fff;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.nav-links {
+  height: 50px;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-links li {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: monospace;
+  color: #fff;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.nav-links a:hover,
+.logo:hover {
+  color: #0ef;
+}
+
+.mainBody h1 {
+  margin: 2rem 0;
+  text-align: center;
+  color: #fff;
+  font-family: monospace;
+  font-size: 2rem;
+}
+
+.myimages {
+  min-height: 650px;
+  width: 90%;
+  margin: auto;
+}
+
+.myimage {
+  min-height: 300px;
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.myimage div {
+  height: 300px;
+  width: 30%;
+  border-radius: 10%;
+}
+
+.myimage div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
+
+.myimage div img:hover {
+  border: 5px solid #0ef;
+  transform: scale(1.05);
+}
+
+@media (max-width: 835px) {
+  .nav-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: #1f242d;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+    font-size: bold;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .myimage {
+    display: block;
+  }
+
+  .myimage div {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}

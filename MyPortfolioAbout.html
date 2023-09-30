@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./MyPortfolioAbout.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="MyPortfolioHome.html">Home</a></li>
+                <li><a href="MyPortfolioAbout.html">About</a></li>
+                <li><a href="MyProtfolioServices.html">Services</a></li>
+                <li><a href="MyPortfolioPortfolio.html">Portfolio</a></li>
+                <li><a href="MyPortfolioContact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+    <main class="mainBody">
+        <div class="myImage">
+            <div class="image">
+                <img src="./IMG_20230929_081831.jpg" alt="Image is not found">
+            </div>
+        </div>
+        <div class="myText">
+            <div class="myText2">
+                <p class="paragraph">About <span style="color: #0ef;">Me</span></p>
+                <p>Software Developer</p>
+            </div>
+            <p class="someText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas delectus temporibus,
+                accusamus iste dolor, nobis Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed consequatur
+                quos, non minus quaerat omnis explicabo. Dolorum accusantium quam, ducimus enim, error quod sapiente
+                voluptatibus deserunt dignissimos exercitationem magni reprehenderit.</p>
+            <button>Read More</button>
+        </div>
+    </main>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburgerMenu.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+        });
+    });
+</script>
+</html>

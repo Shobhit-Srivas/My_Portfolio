@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./MyPortfolioContact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="MyPortfolioHome.html">Home</a></li>
+                <li><a href="MyPortfolioAbout.html">About</a></li>
+                <li><a href="MyProtfolioServices.html">Services</a></li>
+                <li><a href="MyPortfolioPortfolio.html">Portfolio</a></li>
+                <li><a href="MyPortfolioContact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="heading">
+            <h1>Contact <span style="color: #0ef;">Me!</span></h1>
+        </div>
+        <div class="form">
+            <form>
+                <div class="text-email">
+                    <input class="same-property" type="text" name="full-name" placeholder="Full Name">
+                    <input class="same-property" type="email" name="email" placeholder="Email Address">
+                </div>
+                <div class="text-email">
+                    <input class="same-property" type="number" name="number" placeholder="Mobile number">
+                    <input class="same-property" type="text" name="eamil-subject" placeholder="Email Subject">
+                </div>
+                <textarea class="same-property" name="message" placeholder="Your Message"></textarea>
+            </form>
+            <div class="btn">
+                <button>Send Message</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburgerMenu.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+        });
+    });
+</script>
+
+</html>

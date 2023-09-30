@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./MyPortfolioServices.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="MyPortfolioHome.html">Home</a></li>
+                <li><a href="MyPortfolioAbout.html">About</a></li>
+                <li><a href="MyProtfolioServices.html">Services</a></li>
+                <li><a href="MyPortfolioPortfolio.html">Portfolio</a></li>
+                <li><a href="MyPortfolioContact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+    <main class="mainBody">
+        <h1>Our <span style="color: #0ef;">Services</span></h1>
+        <div class="outerDiv">
+            <div class="innerDiv">
+                <div class="icon"><i class="fa-solid fa-code"></i></div>
+                <h2>Software Developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil harum eos odio possimus debitis
+                    tenetur aperiam dolorem repellat dolorum dolore dolorem repellat dolorum dolore.</p>
+                <div>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="innerDiv">
+                <div class="icon"><i class="fa-brands fa-aws"></i></div>
+                <h2>Backend Developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil harum eos odio possimus debitis
+                    tenetur aperiam repellat dolorum dolore dolor dolore dolorem repellat dolorum dolore.</p>
+                <div>
+                    <button>Read More</button>
+                </div>
+            </div>
+            <div class="innerDiv">
+                <div class="icon"><i class="fa-solid fa-pen-clip"></i></div>
+                <h2>Frontend Developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil harum eos odio possimus debitis
+                    tenetur aperiam dolorem repellat dolorum dolore dolorem repellat dolorum dolore.</p>
+                <div>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburgerMenu.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+        });
+    });
+</script>
+</html>
